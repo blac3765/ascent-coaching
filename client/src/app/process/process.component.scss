@@ -1,0 +1,71 @@
+.container-fluid {
+	margin-top: 56px;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	font-family: palatino;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.sub-header {
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20vh;
+	font-size: 3em;
+	font-family: palatino;
+}
+
+.card-text {
+	font-size: 1.5em;
+	color: white;
+	font-family: palatino;
+}
+i {
+	margin:10px;
+}
+.link {
+	color: silver;
+	cursor: pointer;
+}
+
+.line {
+	margin-top: 40px;
+	font-family: palatino;
+}
+
+.achieve {
+	background-image: url('/assets/background-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 50vh;
+	margin-top:30px;
+}
+
+.grow {
+	background-image: url('/assets/background-2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 50vh;
+	margin-top:30px;
+}
+
+.enjoy {
+	background-image: url('/assets/background-3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 50vh;
+	margin-top:30px;
+}

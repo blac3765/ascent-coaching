@@ -1,0 +1,6 @@
+<ngb-carousel class="carousel" *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+	<ng-template ngbSlide *ngFor="let image of images">
+		<img class="img-responsive text-center" [src]="image">
+		<div class="carousel-caption"></div>
+	</ng-template>
+</ngb-carousel>

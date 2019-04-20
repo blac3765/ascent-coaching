@@ -1,0 +1,66 @@
+<div class="main" [class.collapsed]="collapsed" [class.expanded]="!collapsed" [class.mobile]="mobile" *ngIf="!wsMode">
+	<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+		<a class="navbar-brand" routerLink="/home"><img src="/assets/logo.png" class="img-responsive logo mr-2">Ascent Coaching</a>
+		<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown" ngbDropdown>
+					<a class="nav-link dropdown-toggle" id="id01"  ngbDropdownToggle>My Work</a>
+					<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+						<a class="dropdown-item" routerLink="/method" (click)="toggleNav()">My Method</a>
+						<a class="dropdown-item" routerLink="/services" (click)="toggleNav()">My Offerings</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/about">My Story</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/blog">My Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/contact">Contact Me</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="content">
+		<div class="container-fluid">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid ws-mode" *ngIf="wsMode">
+	<router-outlet></router-outlet>
+</div>
+
+<footer class="page-footer font-small blue pt-4">
+	<div class="container-fluid text-center text-md-left">
+		<div class="row">
+			<div class="col-md-4 mt-md-0 mt-3 content">
+				<h5 class="text-uppercase">Ascent Coaching</h5>
+				<p>Kelly Berkstresser</p>
+			</div>
+			<hr class="clearfix w-100 d-md-none pb-3">
+			<div class="col-md-2 mb-md-0 mb-3 lists">
+				<a routerLink="/services" routerLinkActive="active">Services</a>
+			</div>
+			<div class="col-md-2 mb-md-0 mb-3 lists">
+				<a routerLink="/about" routerLinkActive="active">About</a>
+			</div>
+			<div class="col-md-2 mb-md-0 mb-3 lists">
+				<a routerLink="/contact" routerLinkActive="active">Contact</a>
+			</div>
+			<div class="col-md-2 mb-md-0 mb-3 lists">
+				<a routerLink="/blog" routerLinkActive="active">Blog</a>
+			</div>
+		</div>
+	</div>
+<!-- Copyright -->
+<!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
+  <p> MDBootstrap.com</p>
+</div> -->
+</footer>

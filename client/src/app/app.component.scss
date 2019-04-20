@@ -1,0 +1,99 @@
+.main {
+	background-color: black;
+}
+
+.logo {
+	max-height: 40px
+}
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+.mobile .content {
+	margin-left: 0px;
+}
+.navbar-brand {
+	color: black;
+	font-family: palatino;
+}
+.nav-item > a {
+	color: black;
+	font-family: palatino;
+}
+.nav-item > a:hover {
+	color: #3160bf;
+}
+.navbar-dark {
+	color: black;
+	border-color: black;
+}
+.navbar-toggler {
+	color: black;
+	border-color: black;
+}
+.navbar-toggler-icon {
+	color: black;
+	border-color: black;
+}
+@media print {
+	.content {
+		margin: 0px;
+	}
+}
+
+.ws-mode {
+	margin-top: 20px;
+}
+
+.toggle {
+	margin-left: 10px;
+}
+
+#mobileCollapse {
+	background-color: white;
+	width: 100%;
+	margin-top: 8px;
+}
+
+#containerTop {
+	position: absolute;
+	top: -30px;
+}
+
+.shadow {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 900;
+	top: 56px;
+	left: 0;
+	color: gray;
+	background-color: rgba(32,32,32,0.5);
+	transition: opacity 0.5s;
+	opacity: 0;
+	&.visible {
+		width: 100%;
+		opacity: 1;
+	}
+}
+
+.active {
+	text-decoration: underline;
+}
+
+footer {
+	background-color: black;
+	.container-fluid {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.lists > a {
+		font-family: palatino;
+		color: white;
+		font-size: 1.5em;
+	}
+	.content {
+		color: white;
+		font-family: palatino;
+	}
+}
