@@ -5,11 +5,12 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-
 const port = process.env.PORT || 8000;
 
 app.listen(port);
 console.log('listening at port: %j', port);
+app.use('/', express.static('./client/dist/ascent-coaching'));
+
 mongoose.connect('mongodb://admin:password1@ds139956.mlab.com:39956/ascent-coaching', {useNewUrlParser:true})
 
 const Article = mongoose.model('Article', {

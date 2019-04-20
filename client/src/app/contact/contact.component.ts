@@ -11,6 +11,7 @@ export class ContactComponent {
 	customer = {
 		name:'',
 		email:'',
+		phone:'',
 		service:'',
 		experience:'',
 		message:'',
