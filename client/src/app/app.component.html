@@ -4,17 +4,23 @@
 		<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+		<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item dropdown" ngbDropdown>
-					<a class="nav-link dropdown-toggle" id="id01"  ngbDropdownToggle>My Work</a>
-					<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-						<a class="dropdown-item" routerLink="/method" (click)="toggleNav()">My Method</a>
-						<a class="dropdown-item" routerLink="/services" (click)="toggleNav()">My Offerings</a>
+					<a class="nav-link dropdown-toggle"  ngbDropdownToggle>My Work</a>
+					<div class="dropdown-menu" ngbDropdownMenu>
+						<a class="dropdown-item" routerLink="/method" (click)="toggleNav()">Your Benefits</a>
+						<a class="dropdown-item" routerLink="/org" (click)="toggleNav()">Organizational Benefits</a>
+						<a class="dropdown-item" routerLink="/faqs" (click)="toggleNav()">FAQs</a>
 					</div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" routerLink="/about">My Story</a>
+				<li class="nav-item dropdown" ngbDropdown>
+					<a class="nav-link dropdown-toggle"  ngbDropdownToggle>My Story</a>
+					<div class="dropdown-menu" ngbDropdownMenu>
+						<a class="dropdown-item" routerLink="/about" (click)="toggleNav()">About Me</a>
+						<a class="dropdown-item" routerLink="/how" (click)="toggleNav()">How I Coach</a>
+						<a class="dropdown-item" routerLink="/who" (click)="toggleNav()">Who I coach</a>
+					</div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" routerLink="/blog">My Blog</a>
@@ -46,7 +52,7 @@
 			</div>
 			<hr class="clearfix w-100 d-md-none pb-3">
 			<div class="col-md-2 mb-md-0 mb-3 lists">
-				<a routerLink="/services" routerLinkActive="active">Services</a>
+				<a routerLink="/method" routerLinkActive="active">Work</a>
 			</div>
 			<div class="col-md-2 mb-md-0 mb-3 lists">
 				<a routerLink="/about" routerLinkActive="active">About</a>
