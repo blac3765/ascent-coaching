@@ -26,20 +26,17 @@ const Customer = mongoose.model('Customer', {
 	experience: [String],
 	message: String,
 	contact: String,
-})
+});
 
 var nodemailer = require('nodemailer');
-var mg = require('nodemailer-mailgun-transport');
 
-// This is your API key that you retrieve from www.mailgun.com/cp (free up to 10K monthly emails)
-var auth = {
+var transporter = nodemailer.createTransport({
+	service: 'gmail',
 	auth: {
-		api_key: '56c853f2553ff625118e184e993b2db8-3fb021d1-93c5ca34',
-		domain: 'https://api.mailgun.net/v3/sandboxae3e3c392f284f34b3268ff06102c615.mailgun.org'
+		user: 'ascentCoaching19@gmail.com',
+		pass: 'grow2019!'
 	}
-}
-
-var nodemailerMailgun = nodemailer.createTransport(mg(auth));
+});
 
 app.post('/api/email', (req,res) => {
 	if(req.body.experience) {
@@ -78,7 +75,7 @@ app.post('/api/email', (req,res) => {
 	console.log('text: %j', text);
 	var mailOptions = {
 		from: 'ascent-coaching@gmail.com',
-		to: 'sethtaylorblack@gmail.com',
+		to: 'kelly@ascentcoaching.io',
 		subject: 'Email contact form',
 		text: text
 	}
@@ -91,15 +88,13 @@ app.post('/api/email', (req,res) => {
 		contact: req.body.contact,
 	}
 	saveCustomer(customer);
-	nodemailerMailgun.sendMail({from: 'Excited User <me@samples.mailgun.org>',
-	to: req.body.email,
-	subject: 'Hello',
-	text: 'Testing some Mailgun awesomness!'}, function (err, info) {
-		if (err) {
-			console.log('Error: ' + err);
-		}
-		else {
-			console.log('Response: ' + info);
+	return transporter.sendMail(mailOptions, function(error, info){
+		if (error) {
+			console.log(error);
+			res.json(error);
+		} else {
+			console.log('Email sent: ' + info.response);
+			res.json(info);
 		}
 	});
 });

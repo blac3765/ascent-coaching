@@ -25,7 +25,7 @@ img {
 }
 
 .card {
-	min-height:28vh;
+	min-height:20vh;
 	font-family: palatino;
 }
 
@@ -68,6 +68,13 @@ img {
 	font-weight: 400;
 	font-size: 4em;
 	font-family: palatino;
+	vertical-align: middle;
+}
+.body-about {
+	font-weight: 400;
+	font-size: 2em;
+	font-family: palatino;
+	vertical-align: middle;
 }
 
 .hover {
