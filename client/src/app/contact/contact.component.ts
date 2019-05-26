@@ -31,7 +31,7 @@ export class ContactComponent {
 		this.message = "Sending..."
 		if(this.customer.phoneContact) this.customer.contact = 'phone';
 		if(this.customer.emailContact) this.customer.contact = 'email';
-		if(this.customer.socialContact) this.customer.contact = 'social';
+		console.log('this.customer: %o', this.customer);
 		this.apiService.sendEmail(this.customer).then((res:any) => {
 			this.busy = false;
 			if(res.accepted) {

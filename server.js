@@ -34,7 +34,7 @@ var transporter = nodemailer.createTransport({
 	service: 'gmail',
 	auth: {
 		user: 'ascentCoaching19@gmail.com',
-		pass: 'grow2019!'
+		pass: 'Achieve19!'
 	}
 });
 
@@ -42,24 +42,25 @@ app.post('/api/email', (req,res) => {
 	if(req.body.experience) {
 		var experience = [];
 		req.body.experience.forEach(e => {
+			console.log('e: %o', e);
 			switch(e) {
 				case '0':
-					experience.push('0-12 months');
+					experience.push('Less than 1 year');
 					return;
 				case '1':
 					experience.push(' 1-2 years');
 					return;
 				case '2':
-					experience.push(' 2-3 years');
-					return;
-				case '3':
 					experience.push(' 3-5 years');
 					return;
+				case '3':
+					experience.push(' 6-10 years');
+					return;
 				case '4':
-					experience.push(' 5+ years');
+					experience.push(' 10+ years');
 					return;
 			}
-		})
+		});
 	}
 	console.log('experience: %j', experience);
 	var text = [
