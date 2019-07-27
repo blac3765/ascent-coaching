@@ -106,7 +106,7 @@ function saveCustomer(customer) {
 }
 
 app.get('/api/blogs', (req, res) => {
-	return Article.find().exec().then(articles => {
+	return Article.find().sort('-date').exec().then(articles => {
 		res.json(articles);
 	})
 });

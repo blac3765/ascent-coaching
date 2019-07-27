@@ -3,8 +3,8 @@
 		<div class="card-body">
 			<div class="card-body">
 				<span class="float-right">{{blog.date | date:'shortDate'}}</span>
-				<h3 class="card-title">{{blog.title}}</h3>
-				<p class="card-text ml-1">{{blog.body}}</p>
+				<h3 class="card-title text-center">{{blog.title}}</h3>
+				<div class="card-text ml-1" [innerHTML]="blog.body">{{blog.body}}</div>
 				<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 			</div>
 		</div>
