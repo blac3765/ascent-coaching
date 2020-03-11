@@ -19,6 +19,7 @@ import { OrganizationBenefitsComponent } 	from './organization-benefits/organiza
 import { FaqsComponent } 					from './faqs/faqs.component';
 import { HowCoachComponent } 				from './how-coach/how-coach.component';
 import { WhoCoachComponent } 				from './who-coach/who-coach.component';
+import { CfoComponent } from './cfo/cfo.component';
 
 @NgModule({
 	declarations: [
@@ -34,7 +35,8 @@ import { WhoCoachComponent } 				from './who-coach/who-coach.component';
 		OrganizationBenefitsComponent,
 		FaqsComponent,
 		HowCoachComponent,
-		WhoCoachComponent
+		WhoCoachComponent,
+		CfoComponent
 	],
 	imports: [
 		BrowserModule,

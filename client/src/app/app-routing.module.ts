@@ -11,6 +11,7 @@ import { OrganizationBenefitsComponent } 	from './organization-benefits/organiza
 import { FaqsComponent } 					from './faqs/faqs.component';
 import { HowCoachComponent } 				from './how-coach/how-coach.component';
 import { WhoCoachComponent } 				from './who-coach/who-coach.component';
+import { CfoComponent }						from './cfo/cfo.component';
 
 const routes: Routes = [
 	{path:'',							redirectTo:'/home', pathMatch:'full'},
@@ -24,6 +25,7 @@ const routes: Routes = [
 	{path:'faqs',						component:FaqsComponent},
 	{path:'who',						component:WhoCoachComponent},
 	{path:'how',						component:HowCoachComponent},
+	{path:'cfo',						component:CfoComponent},
 	{path: '**',						redirectTo:'/home'}
 ];
 
