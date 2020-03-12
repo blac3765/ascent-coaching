@@ -1,0 +1,91 @@
+.header-image {
+	background-image: url('/assets/cfo-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	width: 100%;
+	min-height: 50vh;
+	margin-top:30px;
+}
+
+.container-fluid {
+	margin-top: 56px;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	font-family: palatino;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.sub-header {
+	color: white;
+	text-align: center;
+    vertical-align: middle;
+    font-family: palatino;
+}
+
+.box {
+    border: 1px solid white;
+    margin: 10vw;
+    padding: 3vw;
+}
+
+.box-2 {
+    border: 1px solid white;
+    padding: 3vw;
+}
+
+.card-text {
+	font-size: 1.5em;
+	color: white;
+	font-family: palatino;
+}
+
+i {
+	margin:10px;
+}
+
+
+.line {
+	margin-top: 40px;
+    font-family: palatino;
+    color:white;
+    text-align: center;
+}
+
+.pane-1 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('/assets/cfo-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 50vh;
+	margin-top:30px;
+}
+
+.pane-2 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('/assets/cfo-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 50vh;
+    margin-top:30px;
+    padding:10vw;
+}
+
+@media only screen and (max-width:576px) {
+    .box {
+        border: 0px solid black;
+        padding: 0;
+    }
+    .box-2 {
+        border: 0px solid black;
+        padding: 0;
+    }
+}

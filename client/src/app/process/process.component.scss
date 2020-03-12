@@ -24,26 +24,11 @@
 	color: white;
 	font-family: palatino;
 }
+
 i {
 	margin:10px;
 }
-.link-1 {
-	color: blue;
-	cursor: pointer;
-	text-decoration: underline;
-}
 
-.link-2 {
-	color: green;
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-.link-3 {
-	color: yellow;
-	cursor: pointer;
-	text-decoration: underline;
-}
 
 .line {
 	margin-top: 40px;
@@ -51,7 +36,7 @@ i {
 }
 
 .achieve {
-	background-image: url('/assets/background-1.jpg');
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('/assets/background-1.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
@@ -62,7 +47,7 @@ i {
 }
 
 .grow {
-	background-image: url('/assets/background-2.jpg');
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('/assets/background-1.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
@@ -73,7 +58,7 @@ i {
 }
 
 .enjoy {
-	background-image: url('/assets/background-3.jpg');
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('/assets/background-1.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
@@ -84,5 +69,9 @@ i {
 }
 
 .jumbotron{
-    text-align:center;
+	text-align:center;
+	img {
+		min-width: 100%;
+		max-width: 100%;
+	}
 }
