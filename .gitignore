@@ -9,7 +9,7 @@ client/config.js
 
 # dependencies
 /node_modules
-
+client/node_modules
 # IDEs and editors
 /.idea
 .project
