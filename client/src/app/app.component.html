@@ -1,6 +1,6 @@
 <div class="main" [class.collapsed]="collapsed" [class.expanded]="!collapsed" [class.mobile]="mobile" *ngIf="!wsMode">
 	<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
-		<a class="navbar-brand" routerLink="/home"><img src="/assets/logo.png" class="img-responsive logo mr-2">Ascent Coaching</a>
+		<a class="navbar-brand" routerLink="/home"><img src="/assets/kwb-logo.png" class="img-responsive logo mr-2"></a>
 		<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -10,7 +10,7 @@
 					<a class="nav-link dropdown-toggle"  ngbDropdownToggle>My Work</a>
 					<div class="dropdown-menu" ngbDropdownMenu>
 						<a class="dropdown-item" routerLink="/method" (click)="toggleNav()">Strength Based Coaching</a>
-						<a class="dropdown-item" routerLink="/cfo" (click)="toggleNav()">CFO Consulting</a>
+						<a class="dropdown-item" routerLink="/cfo" (click)="toggleNav()">Recruiting</a>
 						<a class="dropdown-item" routerLink="/org" (click)="toggleNav()">Organizational Benefits</a>
 						<a class="dropdown-item" routerLink="/faqs" (click)="toggleNav()">FAQs</a>
 					</div>
@@ -48,7 +48,7 @@
 	<div class="container-fluid text-center text-md-left">
 		<div class="row">
 			<div class="col-md-4 mt-md-0 mt-3 content">
-				<h5 class="text-uppercase">Ascent Coaching</h5>
+				<h5 class="text-uppercase">KWB Talent</h5>
 				<p>Kelly Berkstresser</p>
 			</div>
 			<hr class="clearfix w-100 d-md-none pb-3">

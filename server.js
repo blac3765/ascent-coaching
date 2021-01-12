@@ -76,7 +76,7 @@ app.post('/api/email', (req,res) => {
 	console.log('text: %j', text);
 	var mailOptions = {
 		from: 'ascent-coaching@gmail.com',
-		to: 'kelly@ascentcoaching.io',
+		to: 'Kberks@kwbtalent.com',
 		subject: 'Email contact form',
 		text: text
 	}
