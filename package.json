@@ -30,7 +30,7 @@
 		"core-js": "^2.5.4",
 		"express": "^4.16.4",
 		"font-awesome": "^4.7.0",
-		"mongoose": "^5.5.1",
+		"mongoose": "^5.7.5",
 		"node-mailer": "^0.1.1",
 		"nodemailer": "^6.1.0",
 		"nodemailer-mailgun-transport": "^1.4.0",
